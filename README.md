@@ -1,7 +1,12 @@
 # WebFramework
 An ICS4U Assignment where the goal is to utilize 1 or 2 frameworks and a design language  to build a website
 
+## Web Frameworks & Design Language
+Our chosen web frameworks are:
+* [Flutter](https://flutter.dev/) because...
+* [Angular](https://angular.io/)because...
 
+And our design language is [Material](https://m3.material.io/get-started)
 ## Design and flowchart
 
 ### Idea / Graphical example
