@@ -3,7 +3,7 @@ An ICS4U Assignment where the goal is to utilize 1 or 2 frameworks and a design 
 
 ## Web Frameworks & Design Language
 Our chosen web frameworks are:
-*[Vue] ([link](https://vuejs.org)
+* [Vue](https://vuejs.org)
 * [Angular](https://angular.io/)
 
 And our design language is [Material](https://m3.material.io/get-started)
