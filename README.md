@@ -6,7 +6,7 @@ Our chosen web frameworks are:
 * [Vue](https://vuejs.org)
 * [Angular](https://angular.io/)
 
-And our design language is [Material](https://m3.material.io/get-started)
+And our design language is [Vuetify](https://vuetifyjs.com/)
 ## Design and flowchart
 
 ### Idea / Graphical example
