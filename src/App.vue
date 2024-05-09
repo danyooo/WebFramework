@@ -18,19 +18,23 @@
    to evade bullets. He is the
     fastest character in the game">
   <v-img
-    class="bg-grey-lighten-2"
     height="300"
     src="https://tcrf.net/images/b/bc/TF2Final_ClassScoutRed.png"
     contain
     
     ></v-img>
+  <!-- embed trailer video-->
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
-  <v-card-actions>
-    <v-btn> <iframe width="560" height="315" src="https://www.youtube.com/embed/IQw-4JABPCM?si=oRKBMiyxuOqVvWOp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> TO GO TO >SHARE AND CLICK EMBED, COPY THE LINK</v-btn>
-  </v-card-actions>
 </v-card></h1>
-<img src="src/assets/scoutiocn.png" width=100>
-<v-btn icon=" src/assets/scoutiocn.png" @click="buttonClicked = !buttonClicked">kk</v-btn>
+
+<v-btn icon @click = "buttonClicked = !buttonClicked">
+<v-icon>
+<img src  = "src/assets/scouticon.png" width=100 />
+  
+</v-icon>
+  
+</v-btn>
 
   
 </template>
