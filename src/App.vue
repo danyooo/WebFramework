@@ -2,14 +2,25 @@
  -->
 <script setup>  
   import { ref } from 'vue'
-  // buttonclicked is false
-  const buttonClicked = ref(false)
+  
+  // create a class for handling button clicks
+  class IconButton{
+    
+   buttonClicked = ref(false) 
+    
+    // create a function for toggling
+    toggleButton(){
+      this.buttonClicked.value = !this.buttonClicked.value
+    }
+  }
+  // create an object to handle the scouts button click
+  const scoutButton = new IconButton()
 </script>
  
 <template>
   <!--create a button that when clicked, is not itself(kind of like a negative) -->
   <!-- attach an icon to the button-->
-<v-btn icon @click="buttonClicked = !buttonClicked">
+<v-btn icon @click="scoutButton.toggleButton()">
   <!-- create the icon and set the image source to scouticon.png-->
 <v-icon>
   <!--TODO: Find a way for the width to scale with button size( so no need to do it manually it just perfectly fits) -->
@@ -17,7 +28,7 @@
 </v-icon>
 </v-btn>
   <!-- if the button is clicked..-->
-<h1 v-if=buttonClicked> <v-card elevation = "10"  title="The Scout" 
+<h1 v-if=scoutButton.buttonClicked.value> <v-card elevation = "10"  title="The Scout" 
 text="The scout is an offensive class
   that focuses on his speed to flank enemies and attack them with his
   scattergun, pistol or bat. 
