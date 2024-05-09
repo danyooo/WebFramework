@@ -18,7 +18,6 @@
 </v-btn>
   <!-- if the button is clicked..-->
 <h1 v-if=buttonClicked> <v-card elevation = "10"  title="The Scout" 
-  <!--display text -->
 text="The scout is an offensive class
   that focuses on his speed to flank enemies and attack them with his
   scattergun, pistol or bat. 
@@ -40,17 +39,6 @@ text="The scout is an offensive class
   <iframe width="560" height="315" src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 </v-card></h1>
-
-<v-btn icon @click = "buttonClicked = !buttonClicked">
-<v-icon>
-<img src  = "src/assets/scouticon.png" width=100 />
-  
-</v-icon>
-  
-</v-btn>
-
-
-  
 </template>
 
 
