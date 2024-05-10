@@ -33,7 +33,6 @@
 </v-icon>
 </v-btn>
   <!-- if the button is clicked..-->
-  <div id=scout>
 
 <v-card v-if=scoutButton.buttonClicked.value 
   variant=tonal
@@ -88,10 +87,6 @@
   </v-icon>
     
   </v-btn>
-
-
-  
-</v-card>
 </div>
 </template>
 
