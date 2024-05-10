@@ -88,6 +88,7 @@
   </v-icon>
     
   </v-btn>
+
     <v-card v-if=engiButton.buttonClicked.value 
       variant=tonal
       color=bg-red-lighten-2
@@ -106,6 +107,7 @@
         fastest character in the game">
 
   </v-card>
+
 </div>
 </template>
 
