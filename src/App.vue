@@ -28,8 +28,16 @@
 </v-icon>
 </v-btn>
   <!-- if the button is clicked..-->
-<h1 v-if=scoutButton.buttonClicked.value> <v-card elevation = "10"  title="The Scout" 
-text="The scout is an offensive class
+  <div id=scout>
+
+<v-card v-if=scoutButton.buttonClicked.value 
+  variant=tonal
+  color=#F49156
+  max-width="600"
+  max-height="800"
+  elevation = "10"  
+  title="The Scout" 
+  text="The scout is an offensive class
   that focuses on his speed to flank enemies and attack them with his
   scattergun, pistol or bat. 
   However he is frail and can
@@ -38,7 +46,7 @@ text="The scout is an offensive class
    he can use his double jump
    to evade bullets. He is the
     fastest character in the game">
-  <v-img
+    <v-img
 
     height="300"
     src="https://tcrf.net/images/b/bc/TF2Final_ClassScoutRed.png"
@@ -47,9 +55,20 @@ text="The scout is an offensive class
     ></v-img>
 
   <!-- embed trailer video-->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe 
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA"
+  title="YouTube video player" 
+  frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+  referrerpolicy="strict-origin-when-cross-origin" 
+  allowfullscreen>
+    
+</iframe>
   
-</v-card></h1>
+</v-card>
+</div>
 </template>
 
 
