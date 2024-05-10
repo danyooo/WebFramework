@@ -2,16 +2,28 @@
  -->
 <script setup>  
   import { ref } from 'vue'
-  // buttonclicked is false
-  const buttonClicked = ref(false)
+  
+  // create a class for handling button clicks
+  class IconButton{
+    
+   buttonClicked = ref(false) 
+    
+    // create a function for toggling
+    toggleButton(){
+      this.buttonClicked.value = !this.buttonClicked.value
+    }
+  }
+  // create an object to handle the scouts button click
+  const scoutButton = new IconButton()
 </script>
  
 <template>
   
   <!--create a button that when clicked, is not itself(kind of like a negative) -->
   <!-- attach an icon to the button-->
-<v-btn icon @click="buttonClicked = !buttonClicked">
-  
+
+<v-btn icon @click="scoutButton.toggleButton()">
+
   <!-- create the icon and set the image source to scouticon.png-->
 <v-icon>
   
@@ -21,8 +33,16 @@
 </v-icon>
 </v-btn>
   <!-- if the button is clicked..-->
-<h1 v-if=buttonClicked> <v-card elevation = "10"  title="The Scout" 
-text="The scout is an offensive class
+  <div id=scout>
+
+<v-card v-if=scoutButton.buttonClicked.value 
+  variant=tonal
+  color=#F49156
+  max-width="600"
+  max-height="800"
+  elevation = "10"  
+  title="The Scout" 
+  text="The scout is an offensive class
   that focuses on his speed to flank enemies and attack them with his
   scattergun, pistol or bat. 
   However he is frail and can
@@ -31,7 +51,7 @@ text="The scout is an offensive class
    he can use his double jump
    to evade bullets. He is the
     fastest character in the game">
-  <v-img
+    <v-img
 
     height="300"
     src="https://tcrf.net/images/b/bc/TF2Final_ClassScoutRed.png"
@@ -41,9 +61,19 @@ text="The scout is an offensive class
     ></v-img>
 
   <!-- embed trailer video-->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe 
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA"
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+
+        </iframe>
   
-</v-card></h1>
+</v-card>
   <div class = "engi">
     
   <v-btn   icon @click="buttonClicked = !buttonClicked">
@@ -58,6 +88,10 @@ text="The scout is an offensive class
   </v-icon>
     
   </v-btn>
+
+
+  
+</v-card>
 </div>
 </template>
 
