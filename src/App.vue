@@ -7,13 +7,17 @@
 </script>
  
 <template>
+  
   <!--create a button that when clicked, is not itself(kind of like a negative) -->
   <!-- attach an icon to the button-->
 <v-btn icon @click="buttonClicked = !buttonClicked">
+  
   <!-- create the icon and set the image source to scouticon.png-->
 <v-icon>
+  
   <!--TODO: Find a way for the width to scale with button size( so no need to do it manually it just perfectly fits) -->
  <img src= "@/assets/scouticon.png" width = 100 />
+  
 </v-icon>
 </v-btn>
   <!-- if the button is clicked..-->
@@ -31,14 +35,30 @@ text="The scout is an offensive class
 
     height="300"
     src="https://tcrf.net/images/b/bc/TF2Final_ClassScoutRed.png"
+    class="bg-red-lighten-2"
     contain
     
     ></v-img>
 
   <!-- embed trailer video-->
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/geNMz0J9TEQ?si=NWM0XPUuA2O6F-DA" title="YouTube video player" frameborder="5" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   
 </v-card></h1>
+  <div class = "engi">
+    
+  <v-btn   icon @click="buttonClicked = !buttonClicked">
+    
+    <!-- create the icon and set the image source to engineericon.png-->
+  <v-icon>
+    <!--TODO: Find a way for the width to scale with button size( so no need to do it manually it just perfectly fits) -->
+   <img src= "https://o.remove.bg/downloads/545a4ff8-23b7-4191-8bee-b6b80e2d8f9f/image-removebg-preview.png"
+     width = 50
+     />
+    
+  </v-icon>
+    
+  </v-btn>
+</div>
 </template>
 
 
