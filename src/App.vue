@@ -15,6 +15,7 @@
   }
   // create an object to handle the scouts button click
   const scoutButton = new IconButton()
+  const engiButton = new IconButton()
 </script>
  
 <template>
@@ -33,11 +34,10 @@
 </v-icon>
 </v-btn>
   <!-- if the button is clicked..-->
-  <div id=scout>
 
 <v-card v-if=scoutButton.buttonClicked.value 
   variant=tonal
-  color=#F49156
+  color=bg-red-lighten-2
   max-width="600"
   max-height="800"
   elevation = "10"  
@@ -76,22 +76,36 @@
 </v-card>
   <div class = "engi">
     
-  <v-btn   icon @click="buttonClicked = !buttonClicked">
+  <v-btn   icon @click="engiButton.toggleButton()">
     
     <!-- create the icon and set the image source to engineericon.png-->
   <v-icon>
     <!--TODO: Find a way for the width to scale with button size( so no need to do it manually it just perfectly fits) -->
-   <img src= "https://o.remove.bg/downloads/545a4ff8-23b7-4191-8bee-b6b80e2d8f9f/image-removebg-preview.png"
-     width = 50
+   <img src= "src/assets/EngineerICONBLU.png"
+     width = 100
      />
     
   </v-icon>
     
   </v-btn>
+    <v-card v-if=engiButton.buttonClicked.value 
+      variant=tonal
+      color=bg-red-lighten-2
+      max-width="600"
+      max-height="800"
+      elevation = "10"  
+      title="The Engineer" 
+      text="The engineer is a defensiv class
+      that focuses on his speed to flank enemies and attack them with his
+      scattergun, pistol or bat. 
+      However he is frail and can
+       only take 125 damage.
+       To counteract this
+       he can use his double jump
+       to evade bullets. He is the
+        fastest character in the game">
 
-
-  
-</v-card>
+  </v-card>
 </div>
 </template>
 
