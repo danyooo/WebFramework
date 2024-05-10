@@ -15,3 +15,10 @@ const vuetify = createVuetify({
 })
 
 createApp(App).use(vuetify).mount('#app')
+// colors
+Vue.use(vuetify, {
+  theme: {
+    redcardbg: '#f49156',
+    secondary: '#29B6F6',
+    anyColor: '#0000'
+}})
