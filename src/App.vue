@@ -22,7 +22,7 @@
   
   <!--create a button that when clicked, is not itself(kind of like a negative) -->
   <!-- attach an icon to the button-->
-
+<div class = scout>   
 <v-btn icon @click="scoutButton.toggleButton()">
 
   <!-- create the icon and set the image source to scouticon.png-->
@@ -33,6 +33,7 @@
   
 </v-icon>
 </v-btn>
+</div>
   <!-- if the button is clicked..-->
 
 <v-card v-if=scoutButton.buttonClicked.value 
@@ -72,8 +73,9 @@
           allowfullscreen>
 
         </iframe>
-  
+
 </v-card>
+
   <div class = "engi">
     
   <v-btn   icon @click="engiButton.toggleButton()">
@@ -88,7 +90,7 @@
   </v-icon>
     
   </v-btn>
-
+<div class = engibutt>
     <v-card v-if=engiButton.buttonClicked.value 
       variant=tonal
       color=bg-red-lighten-2
@@ -96,18 +98,25 @@
       max-height="800"
       elevation = "10"  
       title="The Engineer" 
-      text="The engineer is a defensiv class
-      that focuses on his speed to flank enemies and attack them with his
-      scattergun, pistol or bat. 
-      However he is frail and can
-       only take 125 damage.
+      text="The engineer is a support class
+      that focuses on his machines to defend against enemies and attack them with his
+      shotgun, pistol or wrench. 
+      He has 3 machines. A sentry gun which fires at enemies, a dispenser which heals teammates and gives them ammo(metal for engineer), and two teleporters(entrance and exit) that teleport his team to wherever he places his exit.
+       He can only take 125 damage.
        To counteract this
-       he can use his double jump
-       to evade bullets. He is the
-        fastest character in the game">
+       he can set up a nest to lockdown areas with his sentry and dispenser.
+       ">
+      <v-img
 
+      height="300"
+      src="src/assets/image-removebg-preview (3).png"
+      class="bg-blue-lighten-1"
+      contain
+
+      ></v-img>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SNgNBsCI4EA?si=rrEoLqjGocvENXNi" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
   </v-card>
-
+</div>
 </div>
 </template>
 
