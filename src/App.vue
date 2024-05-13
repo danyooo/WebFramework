@@ -22,7 +22,7 @@
   
   <!--create a button that when clicked, is not itself(kind of like a negative) -->
   <!-- attach an icon to the button-->
-<div class = scout>   
+<div class = scoutbutt>   
 <v-btn icon @click="scoutButton.toggleButton()">
 
   <!-- create the icon and set the image source to scouticon.png-->
@@ -34,6 +34,7 @@
 </v-icon>
 </v-btn>
 </div>
+  <div class = scout>
   <!-- if the button is clicked..-->
 
 <v-card v-if=scoutButton.buttonClicked.value 
@@ -75,7 +76,7 @@
         </iframe>
 
 </v-card>
-
+    </div>
   <div class = "engi">
     
   <v-btn   icon @click="engiButton.toggleButton()">

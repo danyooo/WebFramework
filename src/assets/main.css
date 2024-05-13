@@ -14,9 +14,15 @@ a,
   color: hsla(160, 100%, 37%, 1);
   transition: 0.4s;
 }
+.scoutbutt {
+  position: fixed;
+  left: 25px;
+  top: 30px;
+
+}
 .scout {
   position: fixed;
-  right: 1260px;
+  left: 100px;
   top: 30px;
 
 }
